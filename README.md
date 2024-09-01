@@ -48,21 +48,17 @@ Match a Simple Pattern:
 echo "Hello, World!" | ./grep_remake -E "Hello"
 ```
 Match Using a Character Class:
-
 ```sh
 echo "grep" | ./grep_remake -E "[a-z]rep"
 ```
 Match Using Alternation:
-
 ```sh
 echo "cat" | ./grep_remake -E "c(a|o)t"
-Match Using Quantifiers:
 ```
-
+Match Using Quantifiers:
 ```sh
 echo "greeep" | ./grep_remake -E "gre+p"
 ```
-
 Error Handling
 The program includes basic error handling for invalid inputs and unhandled patterns. Error messages are output to standard error.
 
